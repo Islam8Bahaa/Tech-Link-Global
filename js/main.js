@@ -5,4 +5,5 @@ $(document).ready(function(){
         duration: 500,
         easingOpen: "easeOutBounce",
     });
+
 });

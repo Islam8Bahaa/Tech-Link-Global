@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-	
+	/* outline: auto; */
 
 }
 
@@ -25,6 +25,11 @@
     box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1);
     /* z-index: 1000; */
 }
+
+.middle-inner{
+	padding: 15px 0;
+}
+
 .middle {
     display: flex;
     justify-content: space-between;
@@ -33,15 +38,11 @@
 }
 /* Logo */
 .header .logo {
-    z-index: 103;
-    /* -webkit-transition: all 0.4s ease; */
-    -moz-transition: all 0.4s ease;
-    /* transition: all 0.4s ease; */
-    -moz-box-shadow: inherit;
-
+    width: 13vw;
 }
-.header .img-logo {
-    margin-top: 22px;
+.header .logo img {
+    width: 100%;
+	aspect-ratio: 7/3;
 }
 .header .text-logo{
 	margin-top:30px;
@@ -259,6 +260,125 @@ ul#nav {
 }
 
 
+/* ----------------------------------------Start Slider ----------------------------------------------*/
+.carousel{
+	position: relative;
+}
+
+.carousel .carousel-control-next, .carousel-control-prev{
+	width: 3%;
+	height: 7%;
+	top: 40%;
+	background: transparent;
+}
+.carousel .overlay {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	background-color: #000;
+	z-index: 2;
+}
+
+ .carousel-item img{
+	width: 100%;
+	/* height: 85vh; */
+	aspect-ratio: 10.5 / 4;
+	position: relative;
+}
+
+.carousel-item{
+	position: relative;
+}
+
+.carousel-item .text{
+	position: absolute;
+	top: 35%;
+	left: 15%;
+	color: #fff;
+	z-index: 3;
+	height: fit-content;
+	animation: zoomIn 0.8s both 1s;
+}
+
+.carousel-item .text p{
+	font-size: large;
+	font-weight: bold;
+
+}
+
+
+/*-----------------------------------------End Slider ------------------------------------------------*/
+/*----------------------------------------Start About ----------------------------------------------- */
+
+.about .text{
+	text-align: -webkit-center;
+}
+
+.about .text p{
+	width: 85%;
+	font-size: 23px;
+	line-height: 34px;
+	font-weight: normal;
+	color: #313131;
+}
+/*----------------------------------------End About ----------------------------------------------- */
+/*---------------------------------------Start Services---------------------------------------------*/
+.services{
+	background-color: #1a315b;
+	padding: 25px 0;
+}
+
+.services .head{
+	text-align: -webkit-center;
+}
+
+.services .head h5{
+	color: white;
+	font-size: 22pt;
+	width: 40%;
+}
+
+
+.services .need{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.services .need .box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 30.33%;
+	color: #fff;
+	
+}
+
+.services .need .box p{
+	text-align: center;
+}
+
+.services .need .box i{
+	font-size: 90px;
+}
+
+.services .need .box h3{
+	font-size: 18px;
+	margin: 25px 0;
+}
+
+.services .need .box:hover>h3{
+	color: #e73131;
+}
+
+/*----------------------------------------End Services----------------------------------------------*/
 
 @media (max-width: 1200px){
 	.header .header-container{
@@ -267,20 +387,19 @@ ul#nav {
 }
 
 @media (max-width: 992px){
-	.header .img-logo{
-		margin: 0;
-		width: 14%;
-	}
-	.header .text-logo{
-		margin-top: 0;
-	}
+	
+	
 	.middle-header {
 		padding: 20px;
+	}
+
+	.middle-inner{
+		padding: 15px 0;
 	}
 		
 	.mobile-nav {
 		position: relative;
-		margin-top: -5%;
+		margin-top: -7%;
 	}	
 	.menu-area{
 		display:none;
@@ -432,8 +551,8 @@ ul#nav {
 		display:none;
 	}
 	.header .logo{
-		width: 15%;
-		z-index: 9999;
+		width: 20%;
+		
 		display: inline-block;
 	}
 	.header .nav-inner {
@@ -478,6 +597,24 @@ ul#nav {
 		color: #000;
 	}
 
+
+	/* .carousel-item img {
+		height: 70vh;
+	} */
+
+	.carousel-item h1{
+		font-size: 30px;
+	}
+
+	.carousel-item .text p{
+		font-size: 17px;
+	}
+
+	.services .head h5{
+		
+		width: 70%;
+	}
+
 	
 }
 @media (max-width: 768px){
@@ -485,11 +622,38 @@ ul#nav {
 	.header nav .logo {
 		width: 30%;
 	}
-
-	
-
 	.header .header-container{
 		width: 100%;
+	}
+
+	.carousel-item h1{
+		font-size: 25px;
+	}
+
+	.carousel-item .text p{
+		font-size: 15px;
+	}
+
+	/* .carousel-item img {
+		height: 60vh;
+	} */
+
+	.carousel-item .text{
+		top: 30%;
+	}
+
+	.carousel .carousel-control-next, .carousel-control-prev{
+		width: 8%;
+	}
+
+	.services .head h5{
+		
+		width: 100%;
+	}
+
+	.services .need .box{
+		flex-basis: 100%;
+		/* width: 100%; */
 	}
 
 
@@ -499,8 +663,21 @@ ul#nav {
 		width: 100%;
 	}
 	
+	/* .carousel-item img {
+		height: 45vh;
+	} */
 
-	
+	.carousel-item .text{
+		top: 25%;
+	}
+
+	.carousel-item h1{
+		font-size: 20px;
+	}
+
+	.carousel-item .text p{
+		font-size: 10px;
+	}
 
 }
 
@@ -510,7 +687,13 @@ ul#nav {
 		width: 100%;
 	}
 
-	
+	.carousel-item h1{
+		font-size: 15px;
+	}
+
+	.carousel-item .text p{
+		font-size: 10px;
+	}
 }
 
 @media (max-width: 390px){
