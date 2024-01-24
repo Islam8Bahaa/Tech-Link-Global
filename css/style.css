@@ -63,7 +63,7 @@
 .header .menu-area {
     position: relative;
 	margin-left: 30px;
-	flex-basis: 40%;
+	/* flex-basis: 40%; */
 }
 .header .navbar {
 	padding: 0;
@@ -886,6 +886,10 @@ footer .copy{
 
 	.carousel-item .text p{
 		font-size: 15px;
+	}
+
+	.card{
+		flex-basis: 100%;
 	}
 
 	/* .carousel-item img {
