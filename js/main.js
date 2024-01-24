@@ -6,4 +6,7 @@ $(document).ready(function(){
         easingOpen: "easeOutBounce",
     });
 
+    $('#header').load('header.html')
+    $('#footer').load('footer.html')
+
 });
