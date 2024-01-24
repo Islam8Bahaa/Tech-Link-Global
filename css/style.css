@@ -434,6 +434,18 @@ ul#nav {
 }
 /*----------------------------------------End Cards --------------------------------------------- */
 
+
+.industry{
+	margin: 5% 0;
+}
+
+.industry .industry-container{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
 /*----------------------------------------Start Footer ------------------------------------------ */
 
 .footer{
