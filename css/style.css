@@ -37,13 +37,13 @@
 
 .middle {
     display: flex;
-    
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
 /* Logo */
 .header .logo {
-    width: 13vw;
+    width: 16vw;
 }
 .header .logo img {
     width: 100%;
@@ -85,6 +85,7 @@ ul#nav {
     margin-right: 30px;
     position: relative;
     float: none;
+	font-size: 20px;
     display: inline-block;
 }
 .header .nav li:last-child{
@@ -449,6 +450,14 @@ ul#nav {
 	*/
 }
 
+.industry .industry-container .img{
+    flex-basis: 70%;
+}
+
+.industry .industry-container .img img{
+	width: 100%;
+}
+
 
 
 #form-tet {
@@ -798,7 +807,8 @@ footer .copy{
 	}
 	.header .logo{
 		width: 20%;
-		
+		position: relative;
+		z-index: 4;
 		display: inline-block;
 	}
 	.header .nav-inner {
@@ -921,6 +931,19 @@ footer .copy{
 	.footer .navigation .box{
 		flex-basis: 100%;
 		margin-top: 25px;
+	}
+
+	.industry .industry-container{
+		flex-wrap: wrap-reverse;
+	}
+
+	.industry .industry-container .img{
+		flex-basis: 100%;
+	}
+
+
+	.contact-div .row{
+		grid-template-columns: repeat(1,1fr);
 	}
 
 
