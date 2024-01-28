@@ -418,6 +418,7 @@ ul#nav {
 	height: 100%;
 	object-fit: fill;
 	transition: 0.9s;
+	opacity: 0.8;
 }
 
 .card:hover img {
@@ -429,7 +430,7 @@ ul#nav {
 }
 
 .content h2{
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 }
 
 .content {
@@ -441,10 +442,20 @@ ul#nav {
     /* top: 50%; */
     transition: 1s;
     display: flex;
+	flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
+}
+
+
+.content a{
+	text-decoration: none;
+    color: #fff;
+    padding-top: 25px ;
+	margin-top: 15px;
+	border-top: 2px solid #1A9F68;
 }
 /*----------------------------------------End Cards --------------------------------------------- */
 
