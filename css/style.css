@@ -482,7 +482,7 @@ ul#nav {
 }
 
 
-.industry .industry-container .title{
+.industry  .title{
 	font-size: 25px;
 
 }
@@ -491,7 +491,7 @@ ul#nav {
 	margin-top: 5%;
 }
 
-.industry .industry-container .items p{
+.industry  p{
 	font-size: 20px;
 }
 
@@ -499,12 +499,12 @@ ul#nav {
 	flex-basis: 50%;
 }
 
-.industry .industry-container .items ul{
+.industry  ul{
 	list-style: none;
 	padding: 0;
 }
 
-.industry .industry-container .items ul li{
+.industry  li{
 	font-size: 20px;
 }
 
