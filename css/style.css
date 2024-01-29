@@ -487,6 +487,10 @@ ul#nav {
 
 }
 
+.industry .text{
+	margin-top: 5%;
+}
+
 .industry .industry-container .items p{
 	font-size: 20px;
 }
