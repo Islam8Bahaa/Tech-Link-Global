@@ -10,6 +10,8 @@
 
 body{
 	font-family: "Open Sans";
+	color: rgb(108, 99, 99);
+	
 }
 
 .social{
@@ -40,10 +42,11 @@ body{
     box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1);
     /* z-index: 1000; */
 }
-
+/*
 .middle-inner{
 	padding: 15px 0;
 }
+*/
 
 .middle {
     display: flex;
@@ -55,13 +58,14 @@ body{
 .header .logo {
     width: 16vw;
 	margin-left: 5rem;
+	
 }
 .header .logo img {
-    width: 100%;
-	aspect-ratio: 7/3;
+    width: 70%;
+	aspect-ratio: 9/5;
 }
 .header .text-logo{
-	margin-top:30px;
+	margin-top:20px;
 }
 .header .text-logo a,
 .header .img-logo a {
@@ -96,7 +100,7 @@ ul#nav {
     margin-right: 30px;
     position: relative;
     float: none;
-	font-size: 20px;
+	font-size: 15px;
     display: inline-block;
 }
 .header .nav li:last-child{
@@ -148,6 +152,16 @@ ul#nav {
 	padding-left: 10px;
 	font-size: 15px;
 }
+
+.header .nav li.icon-active .sub-menu li.icon-active a::after,
+.header .nav li.icon-active .sub-menu li.icon-active .sub-menu li.icon-active a::after {
+    display: inline-block;
+    float: right;
+    content: "\f105";
+    padding: 0;
+    margin-left: 8px;
+}
+
 .header .nav li .sub-menu a::after,
 .header .nav li.icon-active .sub-menu li.icon-active .sub-menu a::after,
 .header .nav li.icon-active .sub-menu li.icon-active .sub-menu li.icon-active .sub-menu a::after{
@@ -157,14 +171,14 @@ ul#nav {
 /* Dropdown Menu */
 .header .nav li .sub-menu {
     background: #fff;
-    width: 360px;
+    width: 285px;
     /* text-align: left; */
     position: absolute;
     top: 100%;
     z-index: 999;
     opacity: 0;
     visibility: hidden;
-    padding: 20px;
+    padding: 15px;
     left: -264px;
     margin: 0;
     -webkit-box-shadow: 1px 4px 12px rgba(51, 51, 51, 0.25);
@@ -197,7 +211,7 @@ ul#nav {
     padding: 6px 15px;
     color: #666;
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
     text-transform: capitalize;
     background: transparent;
@@ -209,8 +223,7 @@ ul#nav {
 	border-bottom:0px;
 }
 .header .nav li .sub-menu li:hover a{
-	color:#fff;
-	background:#e73131;
+	color:#e73131;
 }
 .header .nav li .sub-menu li a:hover{
 	border-color:transparent;
@@ -224,7 +237,7 @@ ul#nav {
 .header .nav li .sub-menu li .sub-menu {
     top: 0;
     left: initial;
-    right: -118%;
+    right: -84%;
     -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
@@ -235,6 +248,7 @@ ul#nav {
     opacity: 0;
     visibility: hidden;
     padding: 10px;
+	width:200px
 }
 .header .nav li .sub-menu li:hover .sub-menu{
 	opacity:1;
@@ -252,8 +266,8 @@ ul#nav {
 	background:transparent;
 }
 .header .nav li .sub-menu li .sub-menu li a:hover{
-	color:#fff;
-	background:#e73131;
+	color:#e73131;
+
 }
 .header .nav li .sub-menu .sub-menu li:last-child a{
 	border-bottom:0px solid;
@@ -313,7 +327,7 @@ ul#nav {
 	position: absolute;
 	top: 35%;
 	left: 15%;
-	color: #fff;
+	color: #ffffff;
 	z-index: 3;
 	height: fit-content;
 	animation: zoomIn 0.8s both 1s;
@@ -418,6 +432,7 @@ ul#nav {
 	height: 100%;
 	object-fit: fill;
 	transition: 0.9s;
+	opacity: 0.8;
 }
 
 .card:hover img {
@@ -429,7 +444,7 @@ ul#nav {
 }
 
 .content h2{
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 }
 
 .content {
@@ -441,16 +456,26 @@ ul#nav {
     /* top: 50%; */
     transition: 1s;
     display: flex;
+	flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
 }
+
+
+.content a{
+	text-decoration: none;
+    color: #fff;
+    padding-top: 25px ;
+	margin-top: 15px;
+	border-top: 2px solid #1A9F68;
+}
 /*----------------------------------------End Cards --------------------------------------------- */
 
 
 .industry{
-	margin: 5% 0;
+	margin: 3% 0;
 }
 
 .industry .industry-container{
@@ -471,28 +496,35 @@ ul#nav {
 }
 
 
-.industry .industry-container .title{
-	font-size: 25px;
+.industry  .title{
+	font-size: 15px;
 
 }
 
-.industry .industry-container .items p{
-	font-size: 20px;
+.industry .text{
+	margin-top: 2.5%;
+}
+
+.industry  p{
+	font-size: 15px;
 }
 
 .industry .industry-container .items{
 	flex-basis: 50%;
 }
 
-.industry .industry-container .items ul{
+.industry  ul{
 	list-style: none;
 	padding: 0;
 }
 
-.industry .industry-container .items ul li{
+.industry  li{
 	font-size: 20px;
 }
+.industry .industry-container h4{
+	font-size: 15px;
 
+}
 
 #form-tet {
     text-transform: none;
@@ -522,12 +554,11 @@ li img.icon {
 }
 
 .contact-div ul li p{
-    font-size: 40px;
+    font-size: 20px;
+	flex-direction: column-reverse;
 }
 
-.row .col-grid{
-    margin: auto;
-}
+
 
 .row .col-grid h1{
     margin-bottom: 20px;
