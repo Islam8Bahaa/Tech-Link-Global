@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $('#header').load('header.html', function() {
         // Code to execute after the header is loaded
         $('.main-menu').slicknav({
@@ -9,6 +9,6 @@ $(document).ready(function(){
         });
     });
     $('#footer').load('footer.html');
-    
+
 
 });
