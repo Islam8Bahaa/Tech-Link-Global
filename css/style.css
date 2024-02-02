@@ -40,9 +40,6 @@ body {
     box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1);
     /*z-index: 1000;
      */
-    : ;
-    -ms-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
 }
 
 
@@ -405,6 +402,28 @@ ul#nav {
     border-bottom: 2px solid #1A9F68;
     padding: 10px;
 }
+
+.text .contents {
+    overflow: hidden;
+    height: 2.5em; /* Adjust this height based on the number of lines you want to show initially */
+    position: relative;
+}
+
+.text .full-description {
+    position: absolute;
+    top: 2.5em; /* Should match the height of short-description */
+    left: 0;
+    display: none;
+}
+
+.text:hover .contents {
+    height: auto;
+}
+
+.text:hover .full-description {
+    display: block;
+}
+
 
 
 /*-----------------------------------------End Slider ------------------------------------------------*/
