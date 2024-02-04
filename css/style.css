@@ -384,7 +384,7 @@ ul#nav {
 
 .carousel-item .text {
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 15%;
     color: #ffffff;
     z-index: 3;
@@ -406,27 +406,25 @@ ul#nav {
     padding: 10px;
 }
 
-.text .contents {
+/* .text .contents {
     overflow: hidden;
-    height: 2.5em; /* Adjust this height based on the number of lines you want to show initially */
+    height: 2.5em; 
     position: relative;
 }
 
-.text .full-description {
-    position: absolute;
-    top: 2.5em; /* Should match the height of short-description */
-    left: 0;
-    display: none;
-}
 
 .text:hover .contents {
     height: auto;
 }
 
-.text:hover .full-description {
-    display: block;
-}
 
+/* .text:hover .full-description {
+    display: block;
+} */ 
+.text .full-description {
+    
+    display: none;
+}
 
 
 /*-----------------------------------------End Slider ------------------------------------------------*/
@@ -643,10 +641,12 @@ ul#nav {
 
 .industry .text {
     margin-top: 2.5%;
+    margin-left: 3%;
 }
 
 .industry p {
     font-size: 15px;
+
 }
 
 .industry .industry-container .items {
@@ -1075,6 +1075,14 @@ footer .copy {
         width: 100%;
     }
 
+    .text .contents{
+        display: none;
+    }
+
+    .text .learn-more{
+        display: none;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -1128,6 +1136,10 @@ footer .copy {
     }
     .contact-div .row {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .industry .industry-container .items{
+        flex-basis: 100%;
     }
 }
 

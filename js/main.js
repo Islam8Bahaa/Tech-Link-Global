@@ -10,6 +10,17 @@ $(document).ready(function() {
     });
     $('#footer').load('footer.html');
 
+    $('.learn-more').on('click', function(e) {
+      e.preventDefault();
+      
+      var textContainer = $(this).closest('.text');
+
+      textContainer.find('.full-description').toggle();
+      $('#carouselExampleIndicators').carousel('pause');
+      setTimeout(function() {
+          $('#carouselExampleIndicators').carousel('cycle');
+      }, 30000);
+  });
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 0,
