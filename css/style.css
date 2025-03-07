@@ -1293,6 +1293,14 @@ footer .copy {
     .carousel-item .text p {
         font-size: 10px;
     }
+
+    .industry .industry-box{
+        flex-wrap: wrap;
+    }
+
+    .industry ul{
+        width: 100%;
+    }
 }
 
 @media (max-width: 430px) {
