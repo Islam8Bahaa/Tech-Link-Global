@@ -970,6 +970,11 @@ footer .copy {
 }
 
 
+.bg-black-opacity-light{
+    height: 145px;
+}
+
+
 /*---------------------------------------- End Footer --------------------------------------------*/
 
 @media (max-width: 1200px) {
