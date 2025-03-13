@@ -30,6 +30,10 @@
     width: 100%;
 }
 
+.about-text{
+    font-weight: normal;
+}
+
 .img a {
     flex: 1 1 calc(33.333% - 10px);
     box-sizing: border-box;
@@ -1309,6 +1313,10 @@ footer .copy {
     }
 
     .industry ul{
+        width: 100%;
+    }
+
+    .img{
         width: 100%;
     }
 }
