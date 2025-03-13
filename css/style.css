@@ -20,6 +20,10 @@
     display: flex;
     /* flex-wrap: wrap; */
     gap: 10px;
+    width: 25%;
+}
+.img img{
+    width: 100%;
 }
 .lightboxOverlay{
     height: 100vh;
@@ -420,8 +424,9 @@ ul#nav {
 
 .carousel-item .text {
     position: absolute;
-    top: 30%;
-    left: 15%;
+    top: 0%;
+    margin: auto;
+    /* left: 15%; */
     color: #ffffff;
     z-index: 3;
     height: fit-content;
