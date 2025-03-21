@@ -51,6 +51,14 @@
     transform: scale(1.05);
 }
 
+.img-ind{
+    width: 60%;
+}
+
+.img-ind img{
+    width: 100%;
+}
+
 body {
     font-family: "Open Sans";
     color: rgb(108, 99, 99);
